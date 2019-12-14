@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!---Req meta Tags--->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <title>KOTHA</title>
+<script>
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '250px';
+    document.getElementById('content').style.marginLeft = '250px';
+    document.getElementById('rec').style.marginLeft = '120px';
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+    document.getElementById('rec').style.marginLeft = '0';
+  }
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+    .wrap
+    {
+      position: absolute;
+      width: 70%;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%,-50%);
+    }
+    .wrap #F
+    {
+      text-align: center;
+      font-size: 50px;
+    }
+    #searching
+    {
+      width: 100%;
+      position: relative;
+    }
+    .searchhere
+    {
+      border-radius: 25px 0px 0px 25px;
+      float: left;
+      width: 70%;
+      border: 3px solid white;      
+      padding: 11px;
+    }
+    .searchbtn
+    {
+      color: white;
+      position: absolute;
+      width: 50px;
+      height: 51px;
+      border: 2px solid #ffffff; 
+      background-color: #5f2c7e; 
+      cursor: pointer;
+      border-radius: 0px 25px 25px 0px;
+    }
+    .wrap #searching .searchbtn .fas
+    {
+      color: white;
+    }
+    .wrap #searching .searchbtn:hover
+    {
+      background-color: #c9afe7; 
+    }
+    .recommended
+    {
+      position: absolute;
+      top: 18%;
+      left: 12%;
+      width: 1170px;
+      height: 450px;
+      border-radius: 15px;
+    }
+    .recommended p
+    {
+      text-align: center;
+      padding-top: 6px;
+      padding-left: 6px;
+      font-size: 20px;
+      color: #5f2c7e;
+      font-family: 'Titillium Web', sans-serif;
+    }
+    #c1 .card
+  {
+    color: #7e7e37;
+    position: absolute;
+    top: 22%;
+    left: 13%;
+    width: 350px;
+    height: 390px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #fdfbff;
+  }
+  #c2 .card
+  {
+    color: #5f2c7e;
+    position: absolute;
+    top: 22%;
+    left: 55%;
+    width: 350px;
+    height: 390px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #fdfbff;
+  }
+   .card .card-body a
+  {
+    color: #5d112e;
+  }
+   .card .card-body a:hover
+  {
+    color: #dca79e;
+    text-decoration: none;
+  }
+     .btn
+    {
+       background-color: #5f2c7e;
+       color: white; 
+       width: 140px;
+       height: 65px;
+       position: absolute;
+       left: 87%;
+       top: 85%;
+       cursor: pointer;
+       border-radius: 30px 30px 30px 30px;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 600;
+
+    }
+    .btn:hover
+    {
+      background-color: #aa70f0;
+      top: 84.5%;
+      left: 87%;
+      width: 147px;
+      height: 65px;
+      border-radius: 30px 30px 30px 30px;
+    }
+    .btn .fas
+    {
+      color: white;       
+    }
+    .sidebar ul li ul li
+    {
+      display: none;
+    }
+    .sidebar ul li:hover ul li
+    {
+      display: block;
+      padding-left: 20px;
+    }
+    .wrap #searching #room
+    {
+      width: 120px;
+      height: 51px;
+      border: 1px solid white; 
+      background-color: #FBF8FE;
+    }
+    .sidebar ul li:hover
+    {
+      background-color: #934393
+
+    }
+    #c1 .card .card-body .fas
+    {
+      width: 100px;
+      height: 100px;
+    }
+    #c1 .card:hover
+    {
+      background-color: #ddc7f4;
+      width: 351px;
+      height: 391px;
+    }
+    #c2 .card:hover
+    {
+      background-color: #ddc7f4;
+      width: 351px;
+      height: 391px;
+    }
+     #content #top .tt
+    {
+      font-family: 'Titillium Web', sans-serif;
+      padding-top: 5px;
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <div id="top">
+      <p class="tt">Superuser</p>
+       <span class="slide">
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+     </div>
+    <div id="menu" class="sidebar">
+      <div id="k3">
+      <h2><span id="k">K</span>OTHA</h2>
+      <a href="#" class="close" onclick="closeSlideMenu()">
+        <i class="fas fa-times"></i>
+      </a>
+      </div>
+      <br>
+      <ul>
+      <li><a href="user.html"><i class="fas fa-home"></i> Dashboard</a></li>
+  
+        <li id="lg"><a href="frontpage.html"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>    
+    </ul>
+    </div>
+    <div id="rec" class="recommended">
+    <a href="#">
+    <div id="c1">
+      <div class="card ">       
+       <div class="card-body">   
+          <img src="pie.png" width="310" height="300">        
+          <h3>Pie Chart</h3> 
+          <h6> for total number of registered user </h6> 
+      </div>
+     </div> 
+    </div>
+  </a>
+  <a href="#">
+    <div id="c2">
+      <div class="card ">       
+       <div class="card-body">
+       <img src="bar.png" width="310" height="300">                
+        <h3>Bar Chart</h3> 
+        <h6> For room rented / transaction</h6> 
+      </div>
+     </div> 
+    </div>
+  </a>
+  </div>
+
+
+<!---Script src--->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!---End of Script--->  
+</body>
+</html>
+
+
